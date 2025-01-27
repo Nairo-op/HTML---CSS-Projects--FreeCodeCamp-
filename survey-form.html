@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course registration form</title>
+    <link rel="stylesheet" href="./styles/survey-form.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div>
+        <h1 id="title">Course Application</h1>
+        <p>Apply for the summer course</p>
+      </div>
+      <div>
+        <form required id="survey-fomr" action="">
+          <label for="name" id="name-label">Name</label>
+          <input required type="text" class="block-input" id="name" />
+          <br />
+          <label for="email" id="email-label">Email</label>
+          <input required type="email" id="email" class="block-input" />
+          <br />
+          <label for="number" id="number-label">Phone</label>
+          <input required type="number" id="number" class="block-input" />
+          <br />
+          <label for="dropdown">Level </label>
+          <p>select your study level</p>
+          <select required class="block-input" name="education" id="dropdown">
+            <option value="freshman">Freshman</option>
+            <option value="sophomore">Sophomore</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+          </select>
+          <br />
+          <label for="interests">Interests: </label>
+          <p>select your interests</p>
+          <input
+            type="checkbox"
+            id="mathematics"
+            name="mathematics"
+            value="mathematics"
+          />
+          <label for="mathematics">Mathematics</label><br />
+          <input type="checkbox" id="science" name="science" value="science" />
+          <label for="science">Science</label><br />
+          <input type="checkbox" id="english" name="english" value="english" />
+          <label for="english">English</label><br />
+          <input type="checkbox" id="art" name="art" value="art" />
+          <label for="art">Art</label><br />
+          <input type="checkbox" id="art" name="other" value="other" />
+          <label for="other">Other</label><br />
+          <br />
+          <input type="checkbox" required name="agreement" />
+          <label for="agreement">I agree to the terms and conditions.</label>
+          <br />
+          <br />
+          <label for="comments">Comments</label>
+          <textarea
+            type="text"
+            class="block-input"
+            name="comments"
+            id="comments"
+          ></textarea>
+          <br />
+          <button name="submit" class="block-input" id="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

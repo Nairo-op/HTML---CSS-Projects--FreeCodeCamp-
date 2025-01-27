@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Documentation</title>
+    <link rel="stylesheet" href="./styles/html-documentation.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+        <li><a class="nav-link" href="#Elements_and_Tags">Elements and Tags</a></li>
+        <li><a class="nav-link" href="#Basic_HTML_structure">Basic HTML Structure</a></li>
+        <li><a class="nav-link" href="#Headings">Headings</a></li>
+        <li><a class="nav-link" href="#Paragraphs">Paragraphs</a></li>
+        <li><a class="nav-link" href="#Links">Links</a></li>
+        <li><a class="nav-link" href="#Images">Images</a></li>
+        <li><a class="nav-link" href="#Lists">Lists</a></li>
+        <li><a class="nav-link" href="#Tables">Tables</a></li>
+        <li><a class="nav-link" href="#Forms">Forms</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          HTML (HyperText Markup Language) is the standard markup language for
+          creating web pages and web applications. It is the foundation of web
+          development and is used to structure content on the web.
+        </p>
+      </section>
+      <section class="main-section" id="What_you_should_already_know">
+        <header>What you should already know</header>
+        <p>This guide assumes you have the following basic background:</p>
+        <ul>
+          <li>
+            A general understanding of the Internet and the World Wide Web
+            (WWW).
+          </li>
+          <li>
+            Some familiarity with using a text editor and file management.
+          </li>
+          <li>Basic understanding of web browsers and how they render HTML.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header>Hello world</header>
+        <article>
+          To get started with writing HTML, open a text editor and write your
+          first "Hello world" HTML code:
+          <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello World&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Elements_and_Tags">
+        <header>Elements and Tags</header>
+        <article>
+          HTML documents are made up of elements, which consist of tags. Tags
+          are used to mark up the content of the document. For example, the
+          <span>&lt;p&gt;</span> tag defines a paragraph, and the
+          <span>&lt;a&gt;</span> tag defines a hyperlink.
+        </article>
+      </section>
+      <section class="main-section" id="Basic_HTML_structure">
+        <header>Basic HTML Structure</header>
+        <p>A basic HTML document has the following structure:</p>
+        <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;meta charset=&quot;UTF-8&quot;&gt;
+                &lt;title&gt;Document Title&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;!-- Content goes here --&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;
+            </code></pre>
+      </section>
+      <section class="main-section" id="Headings">
+        <header>Headings</header>
+        <article>
+          <p>
+            HTML provides six levels of headings, from
+            <span>&lt;h1&gt;</span> to <span>&lt;h6&gt;</span>. The
+            <span>&lt;h1&gt;</span> tag defines the most important heading, and
+            the <span>&lt;h6&gt;</span> tag defines the least important heading.
+          </p>
+        <ul>
+            <li>
+                <strong>&lt;h1&gt;</strong> - The main heading, usually the largest. It is typically used for the title of the page.
+                <ul>
+                    <li>Example: <code>&lt;h1&gt;This is a Level 1 Heading&lt;/h1&gt;</code></li>
+                </ul>
+            </li>
+            <li>
+                <strong>&lt;h2&gt;</strong> - Secondary heading, used for major sections of content.
+                <ul>
+                    <li>Example: <code>&lt;h2&gt;This is a Level 2 Heading&lt;/h2&gt;</code></li>
+                </ul>
+            </li>
+            <li>
+                <strong>&lt;h3&gt;</strong> - Tertiary heading, used for subsections under &lt;h2&gt; sections.
+                <ul>
+                    <li>Example: <code>&lt;h3&gt;This is a Level 3 Heading&lt;/h3&gt;</code></li>
+                </ul>
+            </li>
+            <li>
+                <strong>&lt;h4&gt;</strong> - Fourth-level heading, used for subsections under &lt;h3&gt; sections.
+                <ul>
+                    <li>Example: <code>&lt;h4&gt;This is a Level 4 Heading&lt;/h4&gt;</code></li>
+                </ul>
+            </li>
+            <li>
+                <strong>&lt;h5&gt;</strong> - Fifth-level heading, used for even smaller sections.
+                <ul>
+                    <li>Example: <code>&lt;h5&gt;This is a Level 5 Heading&lt;/h5&gt;</code></li>
+                </ul>
+            </li>
+            <li>
+                <strong>&lt;h6&gt;</strong> - Sixth-level heading, the smallest heading level.
+                <ul>
+                    <li>Example: <code>&lt;h6&gt;This is a Level 6 Heading&lt;/h6&gt;</code></li>
+                </ul>
+            </li>
+        </ul>
+          <pre><code>
+            &lt;h1&gt;Main Heading&lt;/h1&gt;
+            &lt;h2&gt;Subheading&lt;/h2&gt;
+            &lt;h3&gt;Sub-subheading&lt;/h3&gt;
+            &lt;!-- and so on --&gt;
+            </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Paragraphs">
+        <header>Paragraphs</header>
+        <article>
+          <p>Paragraphs are defined using the <span>&lt;p&gt;</span> tag.</p>
+          <pre><code>
+            &lt;p&gt;This is a paragraph.&lt;/p&gt;
+            &lt;p&gt;This is another paragraph.&lt;/p&gt;
+            </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Links">
+        <header>Links</header>
+        <article>
+          <p>
+            Links are defined using the <span>&lt;a&gt;</span> tag. The href
+            attribute specifies the URL of the linked document.
+          </p>
+          <pre><code>
+            &lt;a href=&quot;https://www.example.com&quot;&gt;Visit Example&lt;/a&gt;
+            </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Images">
+        <header>Images</header>
+        <article>
+          <p>
+            Images are defined using the <span>&lt;img&gt;</span> tag. The
+            <span>src</span> attribute specifies the path to the image, and the
+            <span>alt</span> attribute provides alternative text for the image.
+          </p>
+          <pre><code>
+                &lt;img src=&quot;image.jpg&quot; alt=&quot;Description of the image&quot;&gt;
+                </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Lists">
+        <header>Lists</header>
+        <article>
+          <p>
+            HTML supports ordered lists <span>&lt;ol&gt;</span> and unordered
+            lists <span>&lt;ul&gt;</span>. List items are defined using the
+            <span>&lt;li&gt;</span>tag.
+            <p>Example: <br>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                  </ul>
+                  
+                  <ol>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                  </ol>
+                  
+            </p></p>
+            Code
+            <pre><code>
+                &lt;ul&gt;
+                  &lt;li&gt;Item 1&lt;/li&gt;
+                  &lt;li&gt;Item 2&lt;/li&gt;
+                  &lt;li&gt;Item 3&lt;/li&gt;
+                &lt;/ul&gt;
+                
+                &lt;ol&gt;
+                  &lt;li&gt;First item&lt;/li&gt;
+                  &lt;li&gt;Second item&lt;/li&gt;
+                  &lt;li&gt;Second item&lt;/li&gt;
+                  &lt;li&gt;Third item&lt
+                  </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Tables">
+        <header>Tables</header>
+        <article>
+            <p>
+                Tables are defined using the <span>&lt;table&gt;</span> tag. Rows are defined using the <span>&lt;tr&gt;</span> tag, and table cells are defined using the <span>&lt;td&gt;</span> tag. Table headers are defined using the <span>&lt;th&gt;</span> tag.
+            </p>
+        </article>
+      </section>
+      <section class="main-section" id="Forms">
+        <header>Forms</header>
+        <article>
+            <p>Forms are used to collect user input and are defined using the <span>&lt;form&gt;</span> tag. Form elements include input fields <span>&lt;input&gt;</span>, text areas <span>&lt;textarea&gt;</span>, and buttons <span>&lt;button&gt;</span>.</p>
+            <pre><code>
+                &lt;form action=&quot;/submit&quot; method=&quot;post&quot;&gt;
+                  &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+                  &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot;&gt;
+                  &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+                &lt;/form&gt;
+                </code></pre>                
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <p>For a complete reference of HTML elements and attributes, visit the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Reference</a>.
+            <ul>
+                <li><a href="https://www.freecodecamp.org/learn">Freecodecamp</a></li>
+                <li><a href="https://www.w3schools.com/html/">W3Schools HTML Tutorial</a> - A comprehensive and easy-to-follow tutorial with interactive examples and exercises.</li>
+                <li><a href="https://www.codecademy.com/learn/learn-html">Codecademy Learn HTML</a> - A beginner-friendly course with hands-on projects and quizzes to test your knowledge.</li>
+                <li><a href="https://geekflare.com/dev/best-html-learning-resources/">Geekflare's Best Free HTML Learning Resources</a> - A curated list of the top free resources for mastering HTML.</li>
+            </ul></p>
+      </section>
+    </main>
+  </body>
+</html>
