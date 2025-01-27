@@ -34,3 +34,17 @@ ul{
     padding: 0px;
     list-style: none;
 }
+@media (max-width:800px) {
+    header h1{
+        display: none;
+    }
+    header{
+        justify-content: center;
+    }
+    .contact-title-1{
+        display: none;
+    }
+    #contact{
+        height: 1000px;
+    }
+}
