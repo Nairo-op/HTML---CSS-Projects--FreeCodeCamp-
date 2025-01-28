@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ajnas - Aspiring Full Stack Developer</title>
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/general.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -15,8 +12,8 @@
   </head>
   <body>
     <header>
-      <h1>I'm Ajnas</h1>
-      <nav>
+      <a href="#" id='profile-link' target='_blank'><h1>I'm Ajnas</h1></a>
+      <nav id='navbar'>
         <ul>
           <li><a href="#welcome-section">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -74,6 +71,7 @@
           </div>
         </div>
       </section>
+
       <section id="skills">
         <h2>Skills</h2>
         <div class="skill-grid">
@@ -81,58 +79,54 @@
             <div class="skill-logo-container">
               <span class="material-icons">html</span>
             </div>
-          </div>
-          <div class="skill-tile">
-            <div class="skill-logo-container">
-              <span class="material-icons"> css </span>
             </div>
-          </div>
-          <div class="skill-tile">
-            <div class="skill-logo-container">
-              <span class="material-icons"> javascript </span>
-            </div>
-          </div>
-          <div class="skill-tile">
-            <div class="skill-logo-container">
-              <span> <h2>React</h2> </span>
-            </div>
+            <div class="skill-tile">
+                <div class="skill-logo-container">
+                  <span class="material-icons"> css </span>
+                </div>
+                </div>
+            <div class="skill-tile">
+                <div class="skill-logo-container">
+                  <span class="material-icons"> javascript </span>
+                </div>
+                </div>
           </div>
         </div>
       </section>
+
       <section id="contact">
         <div class="work-with-me">
           <h2 class="contact-title-1">Contact Me Here</h2>
           <h2 class="contact-title">Let's Work Together</h2>
         </div>
         <div>
-          <ul class="contact-list">
-            <li>
-              <a href=""
-                ><span class="material-icons"> email </span>
-                <p>am.ajnas.tir@gmail.com</p>
-              </a>
-            </li>
-            <li>
-              <a href=""
-                ><span class="material-icons"> place </span>
-                <p>Pune, India</p>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span><img src="./img/instagram.svg" alt="" /></span>
-                <p>am.ajnas</p>
-              </a>
-            </li>
-            <li>
-              <a href=""
-                ><span class="material-icons"> phone </span>
-                <p>+91 1234567890</p>
-              </a>
-            </li>
-          </ul>
+            <ul class="contact-list">
+                <li>
+                    <a href=""><span class="material-icons">
+                        email
+                        </span>
+                        <p>am.ajnas.tir@gmail.com</p>   </a>
+                </li>
+                <li>
+                    <a href=""><span class="material-icons">
+                        place
+                        </span>
+                        <p>Pune, India</p>   </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span><img src="./img/instagram.svg" alt=""></span>
+                        <p>am.ajnas</p>   </a>
+                </li>
+                <li>
+                    <a href=""><span class="material-icons">
+                        phone
+                        </span>
+                        <p>+91 1234567890</p>   </a>
+                </li>
+            </ul>
         </div>
-      </section>
+    </section>
     </main>
     <footer></footer>
   </body>
